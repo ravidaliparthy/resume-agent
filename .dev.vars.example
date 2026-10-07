@@ -1,0 +1,6 @@
+# Copy to .dev.vars for local development. All optional: without them the app still works,
+# it just skips sending email (PDF downloads in the browser still work).
+GMAIL_CLIENT_ID=
+GMAIL_CLIENT_SECRET=
+GMAIL_REFRESH_TOKEN=
+GMAIL_SENDER=you@gmail.com

@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "resume-agent",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-10-07",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": { "not_found_handling": "single-page-application" },
+  "ai": { "binding": "AI" },
+  "durable_objects": {
+    "bindings": [{ "name": "ResumeAgent", "class_name": "ResumeAgent" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["ResumeAgent"] }],
+  "observability": { "enabled": true }
+}
